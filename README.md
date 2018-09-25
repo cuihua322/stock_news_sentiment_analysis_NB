@@ -13,6 +13,7 @@ demo:http://ec2-54-212-23-117.us-west-2.compute.amazonaws.com/stock.php
 2. Feature Selection:
 	
 	tokenize -> remove punctuations & stop words & words which contains number & word frequency < 3
+
 	total feature is  16622  
 
 3. Classification
@@ -31,4 +32,11 @@ NLTK
 
 ## Usage
 ### 1.Data Collection
-
+1. Crawl Today News
+```bash
+$ ./crawlLinks.py today
+```
+2. Predict Today News Sentiment
+```bash
+$ ./classifer.py -predict
+```

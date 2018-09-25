@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+
+# Credit:https://github.com/WayneDW/Sentiment-Analysis-in-Event-Driven-Stock-Price-Movement-Prediction
 """
 Crawl daily price data from yahoo finance to generate raw data
 
