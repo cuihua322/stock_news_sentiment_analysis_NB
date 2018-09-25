@@ -19,8 +19,11 @@ demo:http://ec2-54-212-23-117.us-west-2.compute.amazonaws.com/stock.php
 3. Classification
 	
 	using nltk.NaiveBayesClassifie as classifier
+
 	training set count: 3000
+
 	test count:892
+
 	accuracy:0.816
 
 
