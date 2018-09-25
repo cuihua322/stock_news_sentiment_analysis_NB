@@ -157,6 +157,7 @@ def train_model():
     print(y_test)
     print(accuracy_score(y_test, y_pred))
     '''
+
 def setiment_predict(newsfile, result):
     feature_list = []
     infile = open("./input/features_list",'r')
@@ -195,9 +196,6 @@ def setiment_predict(newsfile, result):
         outfile.write(items[0]+"\t"+items[4]+"\t"+items[5]+"\t"+maxlable+"\t"+label_pro_str.strip()+"\n")
     infile.close()
     outfile.close()
-
-
-     
 
 
 

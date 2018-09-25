@@ -116,6 +116,7 @@ class CrawlLinks:
             #break
         return titles, links, dates, bodys
 
+
 """
 ---requried ./input/stockPrices_raw.json
 ---requried ./input/stockSymbols.data
@@ -124,6 +125,7 @@ news_type:
     history
     today
 """
+
 def get_news(date_type):
 
     with open("./input/stockPrices_raw.json","r") as load_f:
@@ -178,10 +180,6 @@ def get_news(date_type):
                 break
             time.sleep(2)
     fo.close()
-
-
-
-
 
 
 if __name__ == "__main__":
