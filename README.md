@@ -1,9 +1,8 @@
 # stock_news_sentiment_analysis_NB
-# Sentiment Analysis for  Stock News
 Use NLP(nltk.NaiveBayesClassifier) to analysis stock news sentiment 
 
  ## Website
-demo:http://ec2-54-212-23-117.us-west-2.compute.amazonaws.com/stock.php?date=20180925
+demo:http://ec2-54-212-23-117.us-west-2.compute.amazonaws.com/stock.php
 
 ## Methodology
 1. Training Data Collection and Preprocessing
