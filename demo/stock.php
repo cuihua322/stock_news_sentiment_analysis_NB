@@ -6,7 +6,7 @@ while (($filename = readdir($handler)) !== false) {
            }
        }
 closedir($handler);
-$url = "http://ec2-34-222-62-83.us-west-2.compute.amazonaws.com/stock.php?date=";
+$url = "http://ec2-54-212-23-117.us-west-2.compute.amazonaws.com/stock.php?date=";
 foreach ($files as $value) {
 	$value = substr($value,0,8);
     echo "<a  href=\"$url".$value."\">".$value."</a><br>";
@@ -35,6 +35,7 @@ if($date != "" ){
 		$links = array();
 		$titles = array();
 		$labelPros = array();
+		$toplabels = array();
 		foreach($value as $v){
 			$items = split("\t", $v);
 			if(count($items) != 5){
@@ -46,6 +47,7 @@ if($date != "" ){
 			array_push($links, $items[2]);
 			array_push($titles, $items[1]);
 			array_push($labelPros, $items[4]);
+			array_push($toplabels, $items[3]);
 		}
 		$labelstr = "";
 		foreach($labels as $k=>$v){
@@ -55,7 +57,7 @@ if($date != "" ){
 		echo "<p>".$labelstr."</p>";
 		echo "<table border=\"1\">";
 		for($i=0; $i< count($links); $i++){
-			echo "<tr><td><a  href=\"$links[$i]\">".$titles[$i]."</a></td>"."<td>".$labelPros[$i]."</td>";
+			echo "<tr><td><a  href=\"$links[$i]\">".$titles[$i]."</a></td><td>".$toplabels[$i]."</td><td>".$labelPros[$i]."</td>";
 		}
 		echo "</table>";
 	
